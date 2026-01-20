@@ -1,85 +1,112 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Acme Landing</title>
-    <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <title>Acme Landing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
-    <div>
-        <div>
-            <h3>Acme</h3>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </div>
-    </div>
 
-    <div id="home">
-        <h4>Build Better, Faster.</h4>
-        <p>Acme helps you launch projects with a clear, accessible foundation.</p>
+  <!-- Header + Nav -->
+  <header>
+    <h1>Acme</h1>
 
-        <div>
-            <img src="https://via.placeholder.com/800x360">
-            <p>A quick look at Acme in action.</p>
-        </div>
-    </div>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div id="features">
-        <h5>Our Features</h5>
+  <!-- Main -->
+  <main>
 
-        <div>
-            <h6>Accessible by Default</h6>
-            <p>We use generic tags so screen readers get confused.</p>
-        </div>
+    <!-- Hero / Home -->
+    <section id="home" aria-labelledby="hero-title">
+      <h2 id="hero-title">Build Better, Faster.</h2>
+      <p>Acme helps you launch projects with a clear, accessible foundation.</p>
 
-        <div>
-            <h6>Fast to Learn</h6>
-            <p>Everything looks the same, so no hierarchy is clear.</p>
-        </div>
+      <figure>
+        <img
+          src="https://via.placeholder.com/800x360"
+          alt="Screenshot preview of Acme in action"
+        />
+        <figcaption>A quick look at Acme in action.</figcaption>
+      </figure>
+    </section>
 
-        <div>
-            <h6>Built to Scale</h6>
-            <p>Div soup is future-proof… or not?</p>
-        </div>
+    <!-- Features -->
+    <section id="features" aria-labelledby="features-title">
+      <h2 id="features-title">Our Features</h2>
 
-        <div>
-            <p><b>Tip:</b> Headings are random, so the outline doesn't make sense.</p>
-        </div>
-    </div>
+      <article>
+        <h3>Accessible by Default</h3>
+        <p>We use semantic tags so screen readers can understand the structure.</p>
+      </article>
 
-    <div id="about">
-        <h5>About Us</h5>
-        <p>
-            Acme started in <b>2016</b> and we are still going.
-        </p>
-    </div>
+      <article>
+        <h3>Fast to Learn</h3>
+        <p>Clear heading hierarchy makes the page easier to scan and navigate.</p>
+      </article>
 
-    <div id="testimonials">
-        <h5>Feedback</h5>
-        <div>
-            <p>“This page is a nightmare for accessibility.”</p>
-            <p>- Alex</p>
-        </div>
-        <div>
-            <p>“Clean? Not really. Hard to navigate? Yes.”</p>
-            <p>- Sam</p>
-        </div>
-    </div>
+      <article>
+        <h3>Built to Scale</h3>
+        <p>Reusable sections and articles keep content organized as it grows.</p>
+      </article>
 
-    <div>
-        <ul>
-            <li><a href="#home">Top</a></li>
-            <li><a href="#features">Features</a></li>
-        </ul>
-        <p>
-            Acme, 123 Web Ave, Example City · hello@example.com
-        </p>
-        <p>2025 Acme Inc.</p>
-    </div>
+      <aside>
+        <p><strong>Tip:</strong> Use consistent heading levels so the page outline makes sense.</p>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About Us</h2>
+      <p>
+        Acme started in <time datetime="2016">2016</time> and we are still going.
+      </p>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">Feedback</h2>
+
+      <figure>
+        <blockquote cite="#">
+          <p>“This page is a nightmare for accessibility.”</p>
+        </blockquote>
+        <figcaption>— Alex</figcaption>
+      </figure>
+
+      <figure>
+        <blockquote cite="#">
+          <p>“Clean? Not really. Hard to navigate? Yes.”</p>
+        </blockquote>
+        <figcaption>— Sam</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="#home">Top</a></li>
+        <li><a href="#features">Features</a></li>
+      </ul>
+    </nav>
+
+    <address>
+      Acme, 123 Web Ave, Example City ·
+      <a href="mailto:hello@example.com">hello@example.com</a>
+    </address>
+
+    <p><small>&copy; 2025 Acme Inc.</small></p>
+  </footer>
+
 </body>
-
 </html>
